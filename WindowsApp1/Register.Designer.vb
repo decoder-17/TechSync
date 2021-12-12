@@ -23,8 +23,6 @@ Partial Class Register
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
@@ -47,32 +45,11 @@ Partial Class Register
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label1.Location = New System.Drawing.Point(709, 18)
+        Me.Label1.Location = New System.Drawing.Point(703, 18)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(479, 53)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "SELECT YOUR EVENTS"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Franklin Gothic Demi", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label10.Location = New System.Drawing.Point(16, 34)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(148, 24)
-        Me.Label10.TabIndex = 41
-        Me.Label10.Text = "Participant's ID :"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox13.Location = New System.Drawing.Point(170, 26)
-        Me.TextBox13.Multiline = True
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(182, 36)
-        Me.TextBox13.TabIndex = 42
         '
         'Button7
         '
@@ -243,8 +220,6 @@ Partial Class Register
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.Name = "Register"
@@ -258,8 +233,6 @@ Partial Class Register
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox13 As TextBox
     Friend WithEvents Button7 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents CheckedListBox1 As CheckedListBox

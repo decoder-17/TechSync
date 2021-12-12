@@ -35,7 +35,7 @@ Partial Class username
         '
         'password
         '
-        Me.password.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.password.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.password.ForeColor = System.Drawing.Color.Black
         Me.password.Location = New System.Drawing.Point(889, 536)
         Me.password.Name = "password"
@@ -59,7 +59,7 @@ Partial Class username
         'User
         '
         Me.User.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.User.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.User.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.User.ForeColor = System.Drawing.Color.Black
         Me.User.Location = New System.Drawing.Point(889, 474)
         Me.User.Name = "User"
@@ -74,9 +74,9 @@ Partial Class username
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(688, 536)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(169, 36)
+        Me.Label2.Size = New System.Drawing.Size(150, 36)
         Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Password :"
+        Me.Label2.Text = "Password"
         '
         'Label1
         '
@@ -86,9 +86,9 @@ Partial Class username
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(688, 474)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(175, 36)
+        Me.Label1.Size = New System.Drawing.Size(156, 36)
         Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Username :"
+        Me.Label1.Text = "Username"
         '
         'Button1
         '
@@ -141,7 +141,7 @@ Partial Class username
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Bookman Old Style", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(1773, 12)
+        Me.Button5.Location = New System.Drawing.Point(1781, 12)
         Me.Button5.Name = "Button5"
         Me.Button5.Padding = New System.Windows.Forms.Padding(3)
         Me.Button5.Size = New System.Drawing.Size(142, 40)
