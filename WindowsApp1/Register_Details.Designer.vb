@@ -157,11 +157,11 @@ Partial Class Register_Details
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label11.Location = New System.Drawing.Point(23, 182)
+        Me.Label11.Location = New System.Drawing.Point(24, 145)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(147, 29)
+        Me.Label11.Size = New System.Drawing.Size(134, 29)
         Me.Label11.TabIndex = 4
-        Me.Label11.Text = "Qualification :"
+        Me.Label11.Text = "Department:"
         '
         'Label12
         '
@@ -169,11 +169,11 @@ Partial Class Register_Details
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label12.Location = New System.Drawing.Point(23, 139)
+        Me.Label12.Location = New System.Drawing.Point(23, 193)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(155, 29)
+        Me.Label12.Size = New System.Drawing.Size(95, 29)
         Me.Label12.TabIndex = 5
-        Me.Label12.Text = "College Name :"
+        Me.Label12.Text = "College :"
         '
         'TextBox5
         '
@@ -237,11 +237,12 @@ Partial Class Register_Details
         Me.Label3.TabIndex = 35
         Me.Label3.Text = "PARTICIPANT REIGSTRATION"
         '
-        'Entry
+        'Register_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
+        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Background_Selection_Page1
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1830, 937)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
@@ -249,7 +250,8 @@ Partial Class Register_Details
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button4)
-        Me.Name = "Entry"
+        Me.DoubleBuffered = True
+        Me.Name = "Register_Details"
         Me.Text = "Entry"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

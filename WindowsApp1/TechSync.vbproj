@@ -277,5 +277,8 @@
   <ItemGroup>
     <None Include="Resources\Background Selection Page1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Page Background_wo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
