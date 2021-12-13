@@ -17,11 +17,11 @@ Public Class username
         connection.Open()
         Dim dr As SqlDataReader = cmd.ExecuteReader()
         If (dr.Read = True) Then
-            MessageBox.Show("Logged in successfully.")
+            MessageBox.Show("Logged in successfully.", "Login Status", MessageBoxButtons.OK)
             Me.Hide()
             Selection.Show()
         Else
-            MessageBox.Show("Please check your credentials.")
+            MessageBox.Show("Please check your credentials.", "Login Status", MessageBoxButtons.OKCancel)
         End If
         connection.Close()
         User.Clear()

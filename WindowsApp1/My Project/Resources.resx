@@ -121,11 +121,11 @@
   <data name="unnamed (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="374919" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\374919.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Project Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Project Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="presidency-college-emblem-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\presidency-college-emblem-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="presidency-college-emblem-logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\presidency-college-emblem-logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,14 +139,17 @@
   <data name="PRESIDENCY COLLEGE LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PRESIDENCY COLLEGE LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Phoenix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Phoenix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login Page Background_wo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Page Background_wo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DCA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DCA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background Selection Page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background Selection Page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="videoblocks-abstract-background-geometry-surfaces-lines-digits-and-points-abstract-grid-seamless-loop_bg04i1owz_thumbnail-full01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\videoblocks-abstract-background-geometry-surfaces-lines-digits-and-points-abstract-grid-seamless-loop_bg04i1owz_thumbnail-full01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Phoenix1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Phoenix1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +163,11 @@
   <data name="Phoenix Bird" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Phoenix Bird.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="videoblocks-abstract-background-geometry-surfaces-lines-digits-and-points-abstract-grid-seamless-loop_bg04i1owz_thumbnail-full01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\videoblocks-abstract-background-geometry-surfaces-lines-digits-and-points-abstract-grid-seamless-loop_bg04i1owz_thumbnail-full01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Phoenix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phoenix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="374919" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\374919.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="presidency-college-emblem-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\presidency-college-emblem-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="375185" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\375185.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +178,7 @@
   <data name="concept-design-manufacturing-and-logistics-flex-black-and-blue-png-1920_1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\concept-design-manufacturing-and-logistics-flex-black-and-blue-png-1920_1080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login Page Background_wo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Page Background_wo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EVENT PAGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVENT PAGE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

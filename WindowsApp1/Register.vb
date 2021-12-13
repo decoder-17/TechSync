@@ -18,7 +18,7 @@ Public Class Register
         Dim colValue As String = ""
         Dim pid As String = ""
         connection.Open()
-        Dim cmd As New SqlCommand("select PID from Register where PID='" + User.Text.Trim + "'", connection)
+        'Dim cmd As New SqlCommand("select PID from Register where PID='" + User.Text.Trim + "'", connection)
         If (CheckedListBox1.GetItemChecked(0)) Then
             colName = "GC"
             colValue = "1"
@@ -27,7 +27,7 @@ Public Class Register
         End If
         Dim cmd As New SqlCommand("Insert into Register(" + colName + ") values ('" + colValue + "') where PID=""", connection)
         Dim dr As SqlDataReader = cmd.ExecuteReader()
-        MessageBox.Show("Data has been saved successfully.")
+        MessageBox.Show("Data has been saved successfully.", "Registration Status", MessageBoxButtons.OK)
         connection.Close()
     End Sub
 

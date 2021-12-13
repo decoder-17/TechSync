@@ -119,6 +119,12 @@
     <Compile Include="Display - Registration.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EventPages.Designer.vb">
+      <DependentUpon>EventPages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventPages.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Register_Details.Designer.vb">
       <DependentUpon>Register_Details.vb</DependentUpon>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Display.resx">
       <DependentUpon>Display.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventPages.resx">
+      <DependentUpon>EventPages.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register_Details.resx">
       <DependentUpon>Register_Details.vb</DependentUpon>
@@ -279,6 +288,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Login Page Background_wo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EVENT PAGE.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -206,7 +206,7 @@ Partial Class Register_Details
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button6.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button6.Location = New System.Drawing.Point(12, 889)
+        Me.Button6.Location = New System.Drawing.Point(12, 976)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(107, 36)
         Me.Button6.TabIndex = 31

@@ -74,7 +74,7 @@ Partial Class Register
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button12.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button12.Location = New System.Drawing.Point(16, 896)
+        Me.Button12.Location = New System.Drawing.Point(16, 989)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(107, 36)
         Me.Button12.TabIndex = 94

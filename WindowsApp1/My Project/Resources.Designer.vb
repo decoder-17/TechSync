@@ -143,6 +143,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property EVENT_PAGE() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("EVENT PAGE", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property f29ebd84fc275b0b489733fd077a1443() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("f29ebd84fc275b0b489733fd077a1443", resourceCulture)
