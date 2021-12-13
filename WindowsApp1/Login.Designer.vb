@@ -31,27 +31,29 @@ Partial Class username
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'password
         '
         Me.password.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.password.ForeColor = System.Drawing.Color.Black
-        Me.password.Location = New System.Drawing.Point(889, 536)
+        Me.password.Location = New System.Drawing.Point(235, 139)
         Me.password.Name = "password"
         Me.password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.password.Size = New System.Drawing.Size(210, 38)
+        Me.password.Size = New System.Drawing.Size(216, 38)
         Me.password.TabIndex = 12
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Transparent
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Bookman Old Style", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(931, 656)
+        Me.Button3.Location = New System.Drawing.Point(277, 259)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(102, 38)
+        Me.Button3.Size = New System.Drawing.Size(108, 38)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "Reset"
         Me.Button3.UseVisualStyleBackColor = False
@@ -61,20 +63,20 @@ Partial Class username
         Me.User.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.User.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.User.ForeColor = System.Drawing.Color.Black
-        Me.User.Location = New System.Drawing.Point(889, 474)
+        Me.User.Location = New System.Drawing.Point(235, 77)
         Me.User.Name = "User"
-        Me.User.Size = New System.Drawing.Size(210, 38)
+        Me.User.Size = New System.Drawing.Size(216, 38)
         Me.User.TabIndex = 11
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Britannic Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Bookman Old Style", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(688, 536)
+        Me.Label2.Location = New System.Drawing.Point(34, 139)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(150, 36)
+        Me.Label2.Size = New System.Drawing.Size(171, 38)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Password"
         '
@@ -82,11 +84,11 @@ Partial Class username
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Britannic Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Bookman Old Style", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(688, 474)
+        Me.Label1.Location = New System.Drawing.Point(34, 75)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 36)
+        Me.Label1.Size = New System.Drawing.Size(184, 38)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Username"
         '
@@ -94,11 +96,11 @@ Partial Class username
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Bookman Old Style", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(799, 656)
+        Me.Button1.Location = New System.Drawing.Point(145, 259)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 38)
+        Me.Button1.Size = New System.Drawing.Size(103, 38)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
@@ -150,28 +152,39 @@ Partial Class username
         Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.password)
+        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.User)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Location = New System.Drawing.Point(708, 397)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(515, 363)
+        Me.Panel1.TabIndex = 18
+        '
         'username
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Login_Page_Background_wo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1840, 950)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.password)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.User)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.DoubleBuffered = True
         Me.Name = "username"
         Me.Text = "Login"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -184,4 +197,5 @@ Partial Class username
     Friend WithEvents Button2 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents Panel1 As Panel
 End Class

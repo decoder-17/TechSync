@@ -21,7 +21,7 @@ Public Class username
             Me.Hide()
             Selection.Show()
         Else
-            MessageBox.Show("Please Try Again.")
+            MessageBox.Show("Please check your credentials.")
         End If
         connection.Close()
         User.Clear()

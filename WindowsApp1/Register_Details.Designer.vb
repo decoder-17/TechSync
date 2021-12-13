@@ -46,11 +46,11 @@ Partial Class Register_Details
         Me.Button4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button4.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button4.Location = New System.Drawing.Point(12, 23)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(107, 36)
+        Me.Button4.Size = New System.Drawing.Size(130, 36)
         Me.Button4.TabIndex = 13
         Me.Button4.Text = "LOGOUT"
         Me.Button4.UseVisualStyleBackColor = False
@@ -77,38 +77,38 @@ Partial Class Register_Details
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(235, 139)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(280, 35)
+        Me.TextBox3.Size = New System.Drawing.Size(280, 31)
         Me.TextBox3.TabIndex = 31
         '
         'TextBox4
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(235, 191)
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(235, 187)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(280, 35)
+        Me.TextBox4.Size = New System.Drawing.Size(280, 31)
         Me.TextBox4.TabIndex = 30
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label5.Location = New System.Drawing.Point(24, 49)
+        Me.Label5.Location = New System.Drawing.Point(13, 49)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(169, 29)
+        Me.Label5.Size = New System.Drawing.Size(180, 24)
         Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Participant's ID :"
+        Me.Label5.Text = "Participant's ID"
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(235, 94)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(280, 35)
+        Me.TextBox2.Size = New System.Drawing.Size(280, 31)
         Me.TextBox2.TabIndex = 14
         '
         'Button1
@@ -116,7 +116,7 @@ Partial Class Register_Details
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(116, 254)
         Me.Button1.Name = "Button1"
@@ -130,7 +130,7 @@ Partial Class Register_Details
         Me.Button5.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button5.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button5.Location = New System.Drawing.Point(329, 253)
         Me.Button5.Name = "Button5"
@@ -143,44 +143,44 @@ Partial Class Register_Details
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label7.Location = New System.Drawing.Point(23, 100)
+        Me.Label7.Location = New System.Drawing.Point(12, 100)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(205, 29)
+        Me.Label7.Size = New System.Drawing.Size(217, 24)
         Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Participant's Name :"
+        Me.Label7.Text = "Participant's Name"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label11.Location = New System.Drawing.Point(24, 145)
+        Me.Label11.Location = New System.Drawing.Point(13, 145)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(134, 29)
+        Me.Label11.Size = New System.Drawing.Size(140, 24)
         Me.Label11.TabIndex = 4
-        Me.Label11.Text = "Department:"
+        Me.Label11.Text = "Department"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label12.Location = New System.Drawing.Point(23, 193)
+        Me.Label12.Location = New System.Drawing.Point(12, 193)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(95, 29)
+        Me.Label12.Size = New System.Drawing.Size(89, 24)
         Me.Label12.TabIndex = 5
-        Me.Label12.Text = "College :"
+        Me.Label12.Text = "College"
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(235, 47)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(281, 35)
+        Me.TextBox1.Size = New System.Drawing.Size(281, 31)
         Me.TextBox1.TabIndex = 6
         '
         'Button3
@@ -188,12 +188,12 @@ Partial Class Register_Details
         Me.Button3.BackColor = System.Drawing.Color.Transparent
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Bookman Old Style", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Transparent
         Me.Button3.Location = New System.Drawing.Point(1724, 19)
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(3)
-        Me.Button3.Size = New System.Drawing.Size(142, 40)
+        Me.Button3.Size = New System.Drawing.Size(165, 40)
         Me.Button3.TabIndex = 30
         Me.Button3.Text = "EXIT"
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -204,7 +204,7 @@ Partial Class Register_Details
         Me.Button6.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button6.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button6.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button6.Location = New System.Drawing.Point(12, 889)
         Me.Button6.Name = "Button6"
@@ -235,7 +235,7 @@ Partial Class Register_Details
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(623, 53)
         Me.Label3.TabIndex = 35
-        Me.Label3.Text = "PARTICIPANT REIGSTRATION"
+        Me.Label3.Text = "PARTICIPANT REGISTRATION"
         '
         'Register_Details
         '

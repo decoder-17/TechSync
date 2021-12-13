@@ -85,10 +85,10 @@ Partial Class Register
         '
         Me.CheckedListBox1.BackColor = System.Drawing.Color.Black
         Me.CheckedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.CheckedListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckedListBox1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckedListBox1.ForeColor = System.Drawing.Color.White
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Items.AddRange(New Object() {"1. GAME OF CODES", "2. GAME X", "3. WEB WEAVER", "4. TECHNOVA", "5. TECHKNACK", "6. SPARROW'S CHEST", "7. CAPTURING HUES"})
+        Me.CheckedListBox1.Items.AddRange(New Object() {"1. GAME OF CODES", "2. GAME X", "3. WEB WEAVER", "4. TECHNOVA", "5. TECHKNACK", "6. SPARROW'S CHEST"})
         Me.CheckedListBox1.Location = New System.Drawing.Point(30, 53)
         Me.CheckedListBox1.Name = "CheckedListBox1"
         Me.CheckedListBox1.Size = New System.Drawing.Size(366, 232)
@@ -99,7 +99,7 @@ Partial Class Register
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(139, 291)
         Me.Button1.Name = "Button1"
@@ -111,7 +111,7 @@ Partial Class Register
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(235, 48)
+        Me.TextBox1.Location = New System.Drawing.Point(260, 50)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(142, 36)
@@ -121,32 +121,32 @@ Partial Class Register
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Franklin Gothic Demi", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label2.Location = New System.Drawing.Point(41, 56)
+        Me.Label2.Location = New System.Drawing.Point(6, 57)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(188, 24)
+        Me.Label2.Size = New System.Drawing.Size(239, 24)
         Me.Label2.TabIndex = 104
-        Me.Label2.Text = "REGISTRATION FEES:"
+        Me.Label2.Text = "REGISTRATION FEES"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Franklin Gothic Demi", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label3.Location = New System.Drawing.Point(31, 119)
+        Me.Label3.Location = New System.Drawing.Point(6, 118)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(165, 24)
+        Me.Label3.Size = New System.Drawing.Size(203, 24)
         Me.Label3.TabIndex = 107
-        Me.Label3.Text = "PAYMENT STATUS:"
+        Me.Label3.Text = "PAYMENT STATUS"
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Controls.Add(Me.CheckedListBox1)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(723, 237)
         Me.GroupBox1.Name = "GroupBox1"
@@ -164,7 +164,7 @@ Partial Class Register
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(718, 627)
         Me.GroupBox2.Name = "GroupBox2"
@@ -176,9 +176,9 @@ Partial Class Register
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(212, 136)
+        Me.RadioButton2.Location = New System.Drawing.Point(260, 136)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(144, 33)
+        Me.RadioButton2.Size = New System.Drawing.Size(149, 32)
         Me.RadioButton2.TabIndex = 110
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "NOT PAID"
@@ -187,9 +187,9 @@ Partial Class Register
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(212, 98)
+        Me.RadioButton1.Location = New System.Drawing.Point(260, 98)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(85, 33)
+        Me.RadioButton1.Size = New System.Drawing.Size(89, 32)
         Me.RadioButton1.TabIndex = 109
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "PAID"
@@ -200,7 +200,7 @@ Partial Class Register
         Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button3.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button3.Location = New System.Drawing.Point(135, 175)
         Me.Button3.Name = "Button3"
