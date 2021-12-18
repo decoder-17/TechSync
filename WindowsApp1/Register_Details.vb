@@ -23,7 +23,7 @@ Public Class Register_Details
         Dim connStr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TechSync;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         Dim connection As New SqlConnection(connStr)
         connection.Open()
-        Dim cmd As New SqlCommand("Insert into Register([PID],[PName],[College],[Department]) values ('" & TextBox1.Text.Trim & "' ,'" & TextBox2.Text.Trim & "','" & TextBox4.Text.Trim & "','" & TextBox3.Text.Trim & "')", connection)
+        Dim cmd As New SqlCommand("Insert into Register([PID],[PName],[College],[Department]) OUTPUT Inserted.PID values ('" & TextBox1.Text.Trim & "' ,'" & TextBox2.Text.Trim & "','" & TextBox4.Text.Trim & "','" & TextBox3.Text.Trim & "')", connection)
         Dim dr As SqlDataReader = cmd.ExecuteReader()
         MessageBox.Show("Data has been saved successfully.")
         Me.Hide()

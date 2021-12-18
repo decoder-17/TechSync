@@ -16,17 +16,18 @@ Public Class Register
         Dim connection As New SqlConnection(connStr)
         Dim colName As String = ""
         Dim colValue As String = ""
-        Dim pid As String = ""
+        'Dim pid As Integer
         connection.Open()
-        'Dim cmd As New SqlCommand("select PID from Register where PID='" + User.Text.Trim + "'", connection)
         If (CheckedListBox1.GetItemChecked(0)) Then
             colName = "GC"
             colValue = "1"
         ElseIf (CheckedListBox1.GetItemChecked(1)) Then
 
         End If
-        Dim cmd As New SqlCommand("Insert into Register(" + colName + ") values ('" + colValue + "') where PID=""", connection)
+        Dim cmd As New SqlCommand("SELECT SCOPE_IDENTITY()", connection)
         Dim dr As SqlDataReader = cmd.ExecuteReader()
+        Dim inp As New SqlCommand("Insert into Register('" + colName + "') values ('" + colValue + "')", connection)
+        inp.ExecuteReader()
         MessageBox.Show("Data has been saved successfully.", "Registration Status", MessageBoxButtons.OK)
         connection.Close()
     End Sub
