@@ -4,7 +4,7 @@ Public Class Display
     Dim cmd As MySqlCommand
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Me.Hide()
+        Me.Close()
         username.Show()
 
     End Sub
@@ -52,7 +52,7 @@ Public Class Display
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Me.Hide()
+        Me.Close()
         Selection.Show()
 
     End Sub
@@ -63,7 +63,7 @@ Public Class Display
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.Hide()
+        Me.Close()
         Display___Journals.Show()
 
     End Sub

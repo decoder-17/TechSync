@@ -9,12 +9,12 @@ Public Class Register_Details
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Me.Hide()
+        Me.Close()
         username.Show()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Me.Hide()
+        Me.Close()
         Selection.Show()
 
     End Sub
@@ -26,7 +26,7 @@ Public Class Register_Details
         Dim cmd As New SqlCommand("Insert into Register([PID],[PName],[College],[Department]) OUTPUT Inserted.PID values ('" & TextBox1.Text.Trim & "' ,'" & TextBox2.Text.Trim & "','" & TextBox4.Text.Trim & "','" & TextBox3.Text.Trim & "')", connection)
         Dim dr As SqlDataReader = cmd.ExecuteReader()
         MessageBox.Show("Data has been saved successfully.")
-        Me.Hide()
+        Me.Close()
         Register.Show()
         connection.Close()
     End Sub

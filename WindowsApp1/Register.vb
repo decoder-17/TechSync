@@ -7,7 +7,7 @@ Public Class Register
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        Me.Hide()
+        Me.Close()
         Selection.Show()
     End Sub
 

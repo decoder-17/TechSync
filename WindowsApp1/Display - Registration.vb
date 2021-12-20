@@ -20,7 +20,7 @@ Public Class Display___Journals
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
+        Me.Close()
         Selection.Show()
 
     End Sub

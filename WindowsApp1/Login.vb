@@ -18,11 +18,11 @@ Public Class username
         Dim dr As SqlDataReader = cmd.ExecuteReader()
         If (dr.Read = True) Then
             MessageBox.Show("Logged in successfully.", "Login Status", MessageBoxButtons.OK)
-            If (User.Text.Trim.Equals("coder17") && password.Text.Trim.Equals("decoded")) Then
-                Me.Hide()
+            If (User.Text.Trim.Equals("coder17") And password.Text.Trim.Equals("decoded")) Then
+                Me.Close()
                 Selection.Show()
             Else
-                Me.Hide()
+                Me.Close()
                 UserSelection.Show()
             End If
         Else
@@ -48,7 +48,7 @@ Public Class username
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Hide()
+        Me.Close()
         AboutUs.Show()
     End Sub
 End Class

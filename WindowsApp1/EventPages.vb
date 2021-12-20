@@ -1,11 +1,11 @@
 ﻿Public Class EventPages
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Hide()
+        Me.Close()
         Selection.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.Hide()
+        Me.Close()
         Register_Details.Show()
     End Sub
 
