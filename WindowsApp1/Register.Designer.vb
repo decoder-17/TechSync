@@ -35,8 +35,11 @@ Partial Class Register
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -210,6 +213,27 @@ Partial Class Register
         Me.Button3.Text = "SUBMIT"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.GroupBox3.Controls.Add(Me.TextBox2)
+        Me.GroupBox3.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.White
+        Me.GroupBox3.Location = New System.Drawing.Point(723, 131)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(427, 83)
+        Me.GroupBox3.TabIndex = 110
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "PARTICIPANT'S ID"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(76, 33)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(281, 31)
+        Me.TextBox2.TabIndex = 7
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -217,6 +241,7 @@ Partial Class Register
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Background_Selection_Page1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1830, 944)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button12)
@@ -224,10 +249,12 @@ Partial Class Register
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.Name = "Register"
-        Me.Text = "Journals"
+        Me.Text = "PARTICIPANT'S ID"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -246,4 +273,6 @@ Partial Class Register
     Friend WithEvents Button3 As Button
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents TextBox2 As TextBox
 End Class

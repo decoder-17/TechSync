@@ -18,6 +18,7 @@ Public Class Display
         pname.Clear()
         cname.Clear()
         cno.Clear()
+        pid.Clear()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -30,8 +31,9 @@ Public Class Display
             MessageBox.Show("Participant doesn't exist, please enter the ID correctly.")
         Else
             pname.Text = dr.GetString(1)
-            cname.Text = dr.GetString(2)
-            dept.Text = dr.GetString(3)
+            cno.Text = dr.GetInt64(2)
+            cname.Text = dr.GetString(3)
+            dept.Text = dr.GetString(4)
         End If
         connection.Close()
     End Sub
