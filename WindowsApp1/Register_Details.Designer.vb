@@ -24,6 +24,8 @@ Partial Class Register_Details
     Private Sub InitializeComponent()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -58,6 +60,8 @@ Partial Class Register_Details
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -75,10 +79,30 @@ Partial Class Register_Details
         Me.GroupBox1.TabIndex = 29
         Me.GroupBox1.TabStop = False
         '
+        'TextBox5
+        '
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.Location = New System.Drawing.Point(236, 136)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(280, 31)
+        Me.TextBox5.TabIndex = 33
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Label1.Location = New System.Drawing.Point(14, 140)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(140, 24)
+        Me.Label1.TabIndex = 32
+        Me.Label1.Text = "Contact No."
+        '
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(235, 176)
+        Me.TextBox3.Location = New System.Drawing.Point(236, 176)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(280, 31)
         Me.TextBox3.TabIndex = 31
@@ -86,7 +110,7 @@ Partial Class Register_Details
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(235, 224)
+        Me.TextBox4.Location = New System.Drawing.Point(236, 216)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(280, 31)
         Me.TextBox4.TabIndex = 30
@@ -97,7 +121,7 @@ Partial Class Register_Details
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label5.Location = New System.Drawing.Point(13, 49)
+        Me.Label5.Location = New System.Drawing.Point(13, 60)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(180, 24)
         Me.Label5.TabIndex = 13
@@ -106,7 +130,7 @@ Partial Class Register_Details
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(235, 94)
+        Me.TextBox2.Location = New System.Drawing.Point(236, 96)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(280, 31)
         Me.TextBox2.TabIndex = 14
@@ -118,7 +142,7 @@ Partial Class Register_Details
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(116, 308)
+        Me.Button1.Location = New System.Drawing.Point(116, 294)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(107, 35)
         Me.Button1.TabIndex = 12
@@ -132,7 +156,7 @@ Partial Class Register_Details
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(329, 307)
+        Me.Button5.Location = New System.Drawing.Point(329, 293)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(107, 36)
         Me.Button5.TabIndex = 11
@@ -157,7 +181,7 @@ Partial Class Register_Details
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label11.Location = New System.Drawing.Point(13, 182)
+        Me.Label11.Location = New System.Drawing.Point(13, 180)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(140, 24)
         Me.Label11.TabIndex = 4
@@ -169,7 +193,7 @@ Partial Class Register_Details
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label12.Location = New System.Drawing.Point(12, 230)
+        Me.Label12.Location = New System.Drawing.Point(12, 220)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(89, 24)
         Me.Label12.TabIndex = 5
@@ -178,7 +202,7 @@ Partial Class Register_Details
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(235, 47)
+        Me.TextBox1.Location = New System.Drawing.Point(235, 56)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(281, 31)
         Me.TextBox1.TabIndex = 6
@@ -275,4 +299,6 @@ Partial Class Register_Details
     Friend WithEvents Button6 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label1 As Label
 End Class

@@ -23,11 +23,11 @@ Public Class Register_Details
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim connStr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TechSync;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         Dim connection As New SqlConnection(connStr)
-        If String.IsNullOrWhiteSpace(TextBox1.Text) Or String.IsNullOrWhiteSpace(TextBox2.Text) Or String.IsNullOrWhiteSpace(TextBox3.Text) Or String.IsNullOrWhiteSpace(TextBox4.Text) Then
+        If String.IsNullOrWhiteSpace(TextBox1.Text) Or String.IsNullOrWhiteSpace(TextBox2.Text) Or String.IsNullOrWhiteSpace(TextBox3.Text) Or String.IsNullOrWhiteSpace(TextBox4.Text) Or String.IsNullOrWhiteSpace(TextBox5.Text) Then
             MessageBox.Show("All the fields are mandatory. Please all the details.")
         Else
             connection.Open()
-            Dim cmd As New SqlCommand("Insert into Register([PID],[PName],[College],[Department]) OUTPUT Inserted.PID values ('" & TextBox1.Text.Trim & "' ,'" & TextBox2.Text.Trim & "','" & TextBox4.Text.Trim & "','" & TextBox3.Text.Trim & "')", connection)
+            Dim cmd As New SqlCommand("Insert into Register([PID],[PName],[ContactNo],[College],[Department]) values ('" & TextBox1.Text.Trim & "' ,'" & TextBox2.Text.Trim & "','" & TextBox5.Text.Trim & "','" & TextBox4.Text.Trim & "','" & TextBox3.Text.Trim & "')", connection)
             Dim dr As SqlDataReader = cmd.ExecuteReader()
             MessageBox.Show("Data has been saved successfully.")
             Me.Close()
@@ -70,6 +70,18 @@ Public Class Register_Details
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
+        End
+    End Sub
+
+    Private Sub cno_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+        If Not Regex.Match(TextBox5.Text, "^[0-9]{1,10}$").Success Then
+            MsgBox("Please enter your valid contact number.")
+            TextBox5.Clear()
+            TextBox5.Focus()
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
     End Sub
 End Class

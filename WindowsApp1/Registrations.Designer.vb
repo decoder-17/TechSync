@@ -28,7 +28,10 @@ Partial Class Registrations
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Background_Selection_Page1
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(1520, 839)
+        Me.DoubleBuffered = True
         Me.Name = "Registrations"
         Me.Text = "Registrations"
         Me.ResumeLayout(False)

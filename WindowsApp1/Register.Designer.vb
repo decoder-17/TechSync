@@ -91,7 +91,7 @@ Partial Class Register
         Me.CheckedListBox1.Items.AddRange(New Object() {"1. GAME OF CODES", "2. GAME X", "3. WEB WEAVER", "4. TECHNOVA", "5. TECHKNACK", "6. SPARROW'S CHEST"})
         Me.CheckedListBox1.Location = New System.Drawing.Point(30, 53)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(366, 232)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(366, 174)
         Me.CheckedListBox1.TabIndex = 102
         '
         'Button1

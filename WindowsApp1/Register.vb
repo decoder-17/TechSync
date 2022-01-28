@@ -16,9 +16,9 @@ Public Class Register
         Dim connection As New SqlConnection(connStr)
         Dim colName As String = ""
         Dim colValue As String = ""
-        'Dim pid As Integer
         connection.Open()
-        If (CheckedListBox1.GetItemChecked(0)) Then
+        If (CheckedListBox1.CheckedIndices(0)) Then
+            MessageBox.Show("noice")
             colName = "GC"
             colValue = "1"
         ElseIf (CheckedListBox1.GetItemChecked(1)) Then
