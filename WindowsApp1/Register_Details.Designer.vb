@@ -71,14 +71,14 @@ Partial Class Register_Details
         Me.GroupBox1.ForeColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Location = New System.Drawing.Point(718, 317)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(543, 319)
+        Me.GroupBox1.Size = New System.Drawing.Size(543, 356)
         Me.GroupBox1.TabIndex = 29
         Me.GroupBox1.TabStop = False
         '
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(235, 139)
+        Me.TextBox3.Location = New System.Drawing.Point(235, 176)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(280, 31)
         Me.TextBox3.TabIndex = 31
@@ -86,7 +86,7 @@ Partial Class Register_Details
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(235, 187)
+        Me.TextBox4.Location = New System.Drawing.Point(235, 224)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(280, 31)
         Me.TextBox4.TabIndex = 30
@@ -118,9 +118,9 @@ Partial Class Register_Details
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(116, 254)
+        Me.Button1.Location = New System.Drawing.Point(116, 308)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 36)
+        Me.Button1.Size = New System.Drawing.Size(107, 35)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = False
@@ -132,7 +132,7 @@ Partial Class Register_Details
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(329, 253)
+        Me.Button5.Location = New System.Drawing.Point(329, 307)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(107, 36)
         Me.Button5.TabIndex = 11
@@ -157,7 +157,7 @@ Partial Class Register_Details
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label11.Location = New System.Drawing.Point(13, 145)
+        Me.Label11.Location = New System.Drawing.Point(13, 182)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(140, 24)
         Me.Label11.TabIndex = 4
@@ -169,7 +169,7 @@ Partial Class Register_Details
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label12.Location = New System.Drawing.Point(12, 193)
+        Me.Label12.Location = New System.Drawing.Point(12, 230)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(89, 24)
         Me.Label12.TabIndex = 5

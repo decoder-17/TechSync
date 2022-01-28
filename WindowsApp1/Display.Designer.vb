@@ -23,19 +23,19 @@ Partial Class Display
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.dept = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.pid = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.cno = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.cname = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.pname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -47,19 +47,19 @@ Partial Class Display
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.dept)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.pid)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.cno)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.cname)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.pname)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Location = New System.Drawing.Point(707, 211)
         Me.GroupBox1.Name = "GroupBox1"
@@ -67,15 +67,15 @@ Partial Class Display
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         '
-        'TextBox2
+        'dept
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(230, 334)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.TextBox2.Size = New System.Drawing.Size(282, 31)
-        Me.TextBox2.TabIndex = 17
+        Me.dept.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dept.Location = New System.Drawing.Point(230, 334)
+        Me.dept.Multiline = True
+        Me.dept.Name = "dept"
+        Me.dept.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.dept.Size = New System.Drawing.Size(282, 31)
+        Me.dept.TabIndex = 17
         '
         'Label5
         '
@@ -115,13 +115,13 @@ Partial Class Display
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "PARTICIPANT'S ID :"
         '
-        'TextBox1
+        'pid
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(207, 78)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(305, 35)
-        Me.TextBox1.TabIndex = 14
+        Me.pid.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pid.Location = New System.Drawing.Point(207, 78)
+        Me.pid.Name = "pid"
+        Me.pid.Size = New System.Drawing.Size(305, 35)
+        Me.pid.TabIndex = 14
         '
         'Button3
         '
@@ -163,15 +163,15 @@ Partial Class Display
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Participant's Name :"
         '
-        'TextBox7
+        'cno
         '
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(230, 297)
-        Me.TextBox7.Multiline = True
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.TextBox7.Size = New System.Drawing.Size(282, 31)
-        Me.TextBox7.TabIndex = 8
+        Me.cno.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cno.Location = New System.Drawing.Point(230, 297)
+        Me.cno.Multiline = True
+        Me.cno.Name = "cno"
+        Me.cno.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.cno.Size = New System.Drawing.Size(282, 31)
+        Me.cno.TabIndex = 8
         '
         'Label8
         '
@@ -185,13 +185,13 @@ Partial Class Display
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "Contact No."
         '
-        'TextBox6
+        'cname
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(230, 257)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(282, 35)
-        Me.TextBox6.TabIndex = 7
+        Me.cname.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cname.Location = New System.Drawing.Point(230, 257)
+        Me.cname.Name = "cname"
+        Me.cname.Size = New System.Drawing.Size(282, 35)
+        Me.cname.TabIndex = 7
         '
         'Label9
         '
@@ -205,13 +205,13 @@ Partial Class Display
         Me.Label9.TabIndex = 5
         Me.Label9.Text = "College Name:"
         '
-        'TextBox5
+        'pname
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(230, 218)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(282, 35)
-        Me.TextBox5.TabIndex = 6
+        Me.pname.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pname.Location = New System.Drawing.Point(230, 218)
+        Me.pname.Name = "pname"
+        Me.pname.Size = New System.Drawing.Size(282, 35)
+        Me.pname.TabIndex = 6
         '
         'Label1
         '
@@ -310,19 +310,19 @@ Partial Class Display
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents cno As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents cname As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents pname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents pid As TextBox
     Friend WithEvents Button6 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents dept As TextBox
     Friend WithEvents Label5 As Label
 End Class
