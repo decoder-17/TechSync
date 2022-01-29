@@ -17,17 +17,30 @@ Public Class Register
         Dim colName As String = ""
         Dim colValue As String = ""
         connection.Open()
-        If (CheckedListBox1.CheckedIndices(0)) Then
-            MessageBox.Show("noice")
-            colName = "GC"
+        If (CheckedListBox1.GetItemChecked(0)) Then
+            colName = "GOC"
             colValue = "1"
         ElseIf (CheckedListBox1.GetItemChecked(1)) Then
-
+            colName = "GX"
+            colValue = "1"
+        ElseIf (CheckedListBox1.GetItemChecked(1)) Then
+            colName = "WW"
+            colValue = "1"
+        ElseIf (CheckedListBox1.GetItemChecked(1)) Then
+            colName = "TN"
+            colValue = "1"
+        ElseIf (CheckedListBox1.GetItemChecked(1)) Then
+            colName = "TK"
+            colValue = "1"
+        ElseIf (CheckedListBox1.GetItemChecked(1)) Then
+            colName = "SC"
+            colValue = "1"
+        ElseIf (CheckedListBox1.GetItemChecked(1)) Then
+            colName = "CH"
+            colValue = "1"
         End If
-        Dim cmd As New SqlCommand("SELECT SCOPE_IDENTITY()", connection)
+        Dim cmd As New SqlCommand("Insert into Events([pid],'" + colName + "') values ('" + TextBox2.Text.Trim + "','" + colValue + "')", connection)
         Dim dr As SqlDataReader = cmd.ExecuteReader()
-        Dim inp As New SqlCommand("Insert into Register('" + colName + "') values ('" + colValue + "')", connection)
-        inp.ExecuteReader()
         MessageBox.Show("Data has been saved successfully.", "Registration Status", MessageBoxButtons.OK)
         connection.Close()
     End Sub

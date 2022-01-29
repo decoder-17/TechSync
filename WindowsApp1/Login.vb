@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Text.RegularExpressions
 
 Public Class username
     Public reader As SqlDataReader
@@ -45,5 +46,21 @@ Public Class username
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
         AboutUs.Show()
+    End Sub
+
+    Private Sub User_TextChanged(sender As Object, e As EventArgs) Handles User.TextChanged
+        If Not Regex.Match(User.Text, "^[0-9a-z]*$", RegexOptions.IgnoreCase).Success Then
+            MsgBox("Please enter your username correctly.")
+            User.Clear()
+            User.Focus()
+        End If
+    End Sub
+
+    Private Sub password_TextChanged(sender As Object, e As EventArgs) Handles password.TextChanged
+        If Not Regex.Match(password.Text, "^[0-9a-z]*$", RegexOptions.IgnoreCase).Success Then
+            MsgBox("Please enter your password correctly.")
+            password.Clear()
+            password.Focus()
+        End If
     End Sub
 End Class

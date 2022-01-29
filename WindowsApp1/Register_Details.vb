@@ -46,7 +46,7 @@ Public Class Register_Details
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-        If Not Regex.Match(TextBox2.Text, "^[a-z]*$", RegexOptions.IgnoreCase).Success Then
+        If Not Regex.Match(TextBox2.Text, "^[a-z ]*$", RegexOptions.IgnoreCase).Success Then
             MsgBox("Please enter your name.(Numbers and special characters are not allowed)")
             TextBox2.Clear()
             TextBox2.Focus()
@@ -54,7 +54,7 @@ Public Class Register_Details
     End Sub
 
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
-        If Not Regex.Match(TextBox3.Text, "^[a-z]*$", RegexOptions.IgnoreCase).Success Then
+        If Not Regex.Match(TextBox3.Text, "^[a-z ]*$", RegexOptions.IgnoreCase).Success Then
             MsgBox("Please enter your name.(Numbers and special characters are not allowed)")
             TextBox3.Clear()
             TextBox3.Focus()
@@ -62,7 +62,7 @@ Public Class Register_Details
     End Sub
 
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
-        If Not Regex.Match(TextBox4.Text, "^[a-z]*$", RegexOptions.IgnoreCase).Success Then
+        If Not Regex.Match(TextBox4.Text, "^[a-z ]*$", RegexOptions.IgnoreCase).Success Then
             MsgBox("Please enter your name.(Numbers and special characters are not allowed)")
             TextBox4.Clear()
             TextBox4.Focus()
