@@ -120,7 +120,7 @@ Partial Class Selection
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button4.Font = New System.Drawing.Font("Bookman Old Style", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(16, 925)
+        Me.Button4.Location = New System.Drawing.Point(16, 1007)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(117, 36)
         Me.Button4.TabIndex = 16
@@ -133,7 +133,7 @@ Partial Class Selection
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Background_Selection_Page1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1924, 938)
+        Me.ClientSize = New System.Drawing.Size(1924, 981)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)

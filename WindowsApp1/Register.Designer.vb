@@ -27,7 +27,7 @@ Partial Class Register
         Me.Button12 = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.fees = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -111,15 +111,16 @@ Partial Class Register
         Me.Button1.Text = "SUBMIT"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'fees
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(260, 50)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(142, 36)
-        Me.TextBox1.TabIndex = 105
+        Me.fees.Enabled = False
+        Me.fees.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fees.Location = New System.Drawing.Point(260, 50)
+        Me.fees.Multiline = True
+        Me.fees.Name = "fees"
+        Me.fees.ReadOnly = True
+        Me.fees.Size = New System.Drawing.Size(142, 36)
+        Me.fees.TabIndex = 105
         '
         'Label2
         '
@@ -167,7 +168,7 @@ Partial Class Register
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.fees)
         Me.GroupBox2.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(718, 627)
@@ -265,7 +266,7 @@ Partial Class Register
     Friend WithEvents Button12 As Button
     Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents fees As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox

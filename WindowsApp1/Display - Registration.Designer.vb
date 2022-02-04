@@ -26,8 +26,6 @@ Partial Class Display___Journals
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
@@ -84,36 +82,6 @@ Partial Class Display___Journals
         Me.Label1.TabIndex = 94
         Me.Label1.Text = "EVENTS REGISTERED"
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Bookman Old Style", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button2.Location = New System.Drawing.Point(1001, 1038)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(3)
-        Me.Button2.Size = New System.Drawing.Size(142, 40)
-        Me.Button2.TabIndex = 175
-        Me.Button2.Text = "CLEAR"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button12.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.concept_design_manufacturing_and_logistics_flex_black_and_blue_png_1920_1080
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button12.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button12.Location = New System.Drawing.Point(882, 1038)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(107, 36)
-        Me.Button12.TabIndex = 176
-        Me.Button12.Text = "PRINT"
-        Me.Button12.UseVisualStyleBackColor = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
@@ -121,7 +89,7 @@ Partial Class Display___Journals
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(64, 1038)
+        Me.Button1.Location = New System.Drawing.Point(9, 1024)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(107, 52)
         Me.Button1.TabIndex = 185
@@ -175,11 +143,9 @@ Partial Class Display___Journals
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Background_Selection_Page1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1889, 942)
+        Me.ClientSize = New System.Drawing.Size(1889, 1051)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.Label10)
@@ -196,8 +162,6 @@ Partial Class Display___Journals
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button12 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents CheckedListBox1 As CheckedListBox
