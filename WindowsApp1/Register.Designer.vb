@@ -32,11 +32,10 @@ Partial Class Register
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -142,9 +141,9 @@ Partial Class Register
         Me.Label3.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Label3.Location = New System.Drawing.Point(6, 118)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(203, 24)
+        Me.Label3.Size = New System.Drawing.Size(195, 24)
         Me.Label3.TabIndex = 107
-        Me.Label3.Text = "PAYMENT STATUS"
+        Me.Label3.Text = "TRANSACTION ID"
         '
         'GroupBox1
         '
@@ -163,8 +162,7 @@ Partial Class Register
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Controls.Add(Me.RadioButton2)
-        Me.GroupBox2.Controls.Add(Me.RadioButton1)
+        Me.GroupBox2.Controls.Add(Me.TextBox3)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
@@ -177,28 +175,6 @@ Partial Class Register
         Me.GroupBox2.TabIndex = 110
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PAYMENT WINDOW"
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(260, 136)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(149, 32)
-        Me.RadioButton2.TabIndex = 110
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "NOT PAID"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(260, 98)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(89, 32)
-        Me.RadioButton1.TabIndex = 109
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "PAID"
-        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -229,11 +205,23 @@ Partial Class Register
         '
         'TextBox2
         '
+        Me.TextBox2.Enabled = False
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(76, 33)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(281, 31)
         Me.TextBox2.TabIndex = 7
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.ForeColor = System.Drawing.Color.Black
+        Me.TextBox3.Location = New System.Drawing.Point(222, 108)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(180, 38)
+        Me.TextBox3.TabIndex = 108
         '
         'Register
         '
@@ -272,8 +260,7 @@ Partial Class Register
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Button3 As Button
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
 End Class

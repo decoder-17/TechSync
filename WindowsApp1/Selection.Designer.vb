@@ -84,7 +84,7 @@ Partial Class Selection
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(192, 58)
         Me.Button1.TabIndex = 14
-        Me.Button1.Text = "EVENTS"
+        Me.Button1.Text = "EVENTS DETAIL"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button3
@@ -98,7 +98,7 @@ Partial Class Selection
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(192, 57)
         Me.Button3.TabIndex = 13
-        Me.Button3.Text = "REGISTRATIONS"
+        Me.Button3.Text = "VIEW REGISTRATIONS"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Label1

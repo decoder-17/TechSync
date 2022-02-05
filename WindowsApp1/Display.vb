@@ -24,18 +24,23 @@ Public Class Display
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim connStr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TechSync;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         Dim connection As New SqlConnection(connStr)
-        Dim cmd As New SqlCommand("select *from Register where pid='" + pid.Text.Trim + "'", connection)
-        connection.Open()
-        Dim dr As SqlDataReader = cmd.ExecuteReader()
-        If (dr.Read = False) Then
-            MessageBox.Show("Participant doesn't exist, please enter the ID correctly.")
-        Else
-            pname.Text = dr.GetString(1)
-            cno.Text = dr.GetInt64(2)
-            cname.Text = dr.GetString(3)
-            dept.Text = dr.GetString(4)
-        End If
-        connection.Close()
+        Try
+            Dim cmd As New SqlCommand("select *from Register where pid='" + pid.Text.Trim + "'", connection)
+            connection.Open()
+            Dim dr As SqlDataReader = cmd.ExecuteReader()
+            If (dr.Read = False) Then
+                MessageBox.Show("Participant doesn't exist, please enter the ID correctly.")
+            Else
+                pname.Text = dr.GetString(1)
+                cno.Text = dr.GetInt64(2)
+                cname.Text = dr.GetString(3)
+                dept.Text = dr.GetString(4)
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            connection.Close()
+        End Try
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
