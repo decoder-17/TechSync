@@ -32,6 +32,7 @@ Public Class Register
         Dim connection As New SqlConnection(connStr)
         Dim colName As String = ""
         Dim colValue As String = ""
+        Dim i, c As Integer
         If (CheckedListBox1.GetItemChecked(0)) Then
             colName = "[GOC],"
             colValue = "1,"
@@ -67,19 +68,28 @@ Public Class Register
             colValue &= "1"
             amt += 200
         End If
-        Try
-            connection.Open()
-            Dim cmd As New SqlCommand("Insert into Events([PID]," + colName + ") values (" + TextBox2.Text.Trim + "," + colValue + ")", connection)
-            Dim dr As SqlDataReader = cmd.ExecuteReader()
-            MessageBox.Show("Data has been saved successfully.", "Registration Status", MessageBoxButtons.OK)
+        c = 0
+        For i = 0 To (CheckedListBox1.Items.Count - 1)
+            If CheckedListBox1.GetItemChecked(i) = True Then
+                c += 1
+            End If
+        Next
+        If (c = 0) Then
+            MessageBox.Show("Please select an event before you submit.", "Event Selection")
+        Else
+            Try
+                connection.Open()
+                Dim cmd As New SqlCommand("Insert into Events([PID]," + colName + ") values (" + TextBox2.Text.Trim + "," + colValue + ")", connection)
+                Dim dr As SqlDataReader = cmd.ExecuteReader()
+                MessageBox.Show("Data has been saved successfully.", "Registration Status", MessageBoxButtons.OK)
+                fees.Text = amt.ToString("C")
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            Finally
+                connection.Close()
 
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        Finally
-            connection.Close()
-        End Try
-        fees.Text = amt
-
+            End Try
+        End If
         colName = ""
         colValue = ""
         amt = 0
@@ -95,7 +105,7 @@ Public Class Register
         Try
             connection.Open()
             If Not Regex.Match(TextBox3.Text, "^[a-z ][0-9]*$", RegexOptions.IgnoreCase).Success Then
-                Dim cmd As New SqlCommand("Insert into Payment([PID],[Amount],[TransactionID],[RegistrationStatus]) values (" + TextBox2.Text.Trim + "," + fees.Text.Trim + "," + TextBox3.Text.Trim + "," + 1 + ")", connection)
+                Dim cmd As New SqlCommand("Insert into Payment([PID],[Amount],[TransactionID],[RegistrationStatus]) values (" + TextBox2.Text.Trim + "," + Double.Parse(amt) + "," + TextBox3.Text.Trim + "," + 1 + ")", connection)
                 Dim dr As SqlDataReader = cmd.ExecuteReader()
                 MessageBox.Show("Congratulations, you've successfully completed your registration process.", "Registration Status", MessageBoxButtons.OK)
             Else

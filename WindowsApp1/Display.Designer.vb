@@ -23,6 +23,7 @@ Partial Class Display
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.events = New System.Windows.Forms.TextBox()
         Me.dept = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -47,6 +48,7 @@ Partial Class Display
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.GroupBox1.Controls.Add(Me.events)
         Me.GroupBox1.Controls.Add(Me.dept)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Button5)
@@ -63,12 +65,24 @@ Partial Class Display
         Me.GroupBox1.ForeColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Location = New System.Drawing.Point(707, 211)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(538, 521)
+        Me.GroupBox1.Size = New System.Drawing.Size(538, 629)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         '
+        'events
+        '
+        Me.events.Enabled = False
+        Me.events.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.events.Location = New System.Drawing.Point(24, 476)
+        Me.events.Multiline = True
+        Me.events.Name = "events"
+        Me.events.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.events.Size = New System.Drawing.Size(488, 134)
+        Me.events.TabIndex = 18
+        '
         'dept
         '
+        Me.dept.Enabled = False
         Me.dept.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dept.Location = New System.Drawing.Point(230, 334)
         Me.dept.Multiline = True
@@ -165,6 +179,7 @@ Partial Class Display
         '
         'cno
         '
+        Me.cno.Enabled = False
         Me.cno.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cno.Location = New System.Drawing.Point(230, 297)
         Me.cno.Multiline = True
@@ -181,12 +196,13 @@ Partial Class Display
         Me.Label8.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Label8.Location = New System.Drawing.Point(19, 299)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(122, 29)
+        Me.Label8.Size = New System.Drawing.Size(123, 29)
         Me.Label8.TabIndex = 4
-        Me.Label8.Text = "Contact No."
+        Me.Label8.Text = "Contact No:"
         '
         'cname
         '
+        Me.cname.Enabled = False
         Me.cname.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cname.Location = New System.Drawing.Point(230, 257)
         Me.cname.Name = "cname"
@@ -207,6 +223,7 @@ Partial Class Display
         '
         'pname
         '
+        Me.pname.Enabled = False
         Me.pname.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pname.Location = New System.Drawing.Point(230, 218)
         Me.pname.Name = "pname"
@@ -325,4 +342,5 @@ Partial Class Display
     Friend WithEvents Label2 As Label
     Friend WithEvents dept As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents events As TextBox
 End Class

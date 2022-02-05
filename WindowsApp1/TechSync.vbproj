@@ -113,12 +113,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Display - Registration.Designer.vb">
-      <DependentUpon>Display - Registration.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Display - Registration.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="EventPages.Designer.vb">
       <DependentUpon>EventPages.vb</DependentUpon>
     </Compile>
@@ -182,9 +176,6 @@
     <EmbeddedResource Include="AboutUs.resx">
       <DependentUpon>AboutUs.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Display - Registration.resx">
-      <DependentUpon>Display - Registration.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Display.resx">
       <DependentUpon>Display.vb</DependentUpon>
     </EmbeddedResource>
@@ -224,7 +215,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="The Myth_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\presidency-college-emblem-logo.png" />

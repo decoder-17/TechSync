@@ -32,10 +32,10 @@ Partial Class Register
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -87,6 +87,7 @@ Partial Class Register
         '
         Me.CheckedListBox1.BackColor = System.Drawing.Color.Black
         Me.CheckedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.CheckedListBox1.CheckOnClick = True
         Me.CheckedListBox1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckedListBox1.ForeColor = System.Drawing.Color.White
         Me.CheckedListBox1.FormattingEnabled = True
@@ -176,6 +177,16 @@ Partial Class Register
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PAYMENT WINDOW"
         '
+        'TextBox3
+        '
+        Me.TextBox3.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.ForeColor = System.Drawing.Color.Black
+        Me.TextBox3.Location = New System.Drawing.Point(222, 108)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(180, 38)
+        Me.TextBox3.TabIndex = 108
+        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
@@ -212,16 +223,6 @@ Partial Class Register
         Me.TextBox2.Size = New System.Drawing.Size(281, 31)
         Me.TextBox2.TabIndex = 7
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.Black
-        Me.TextBox3.Location = New System.Drawing.Point(222, 108)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(180, 38)
-        Me.TextBox3.TabIndex = 108
         '
         'Register
         '
