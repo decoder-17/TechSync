@@ -32,7 +32,7 @@ Partial Class Register
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.tid = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -163,7 +163,7 @@ Partial Class Register
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
+        Me.GroupBox2.Controls.Add(Me.tid)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
@@ -177,15 +177,15 @@ Partial Class Register
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PAYMENT WINDOW"
         '
-        'TextBox3
+        'tid
         '
-        Me.TextBox3.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.Black
-        Me.TextBox3.Location = New System.Drawing.Point(222, 108)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(180, 38)
-        Me.TextBox3.TabIndex = 108
+        Me.tid.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.tid.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tid.ForeColor = System.Drawing.Color.Black
+        Me.tid.Location = New System.Drawing.Point(222, 108)
+        Me.tid.Name = "tid"
+        Me.tid.Size = New System.Drawing.Size(180, 38)
+        Me.tid.TabIndex = 108
         '
         'Button3
         '
@@ -263,5 +263,5 @@ Partial Class Register
     Friend WithEvents Button3 As Button
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents tid As TextBox
 End Class

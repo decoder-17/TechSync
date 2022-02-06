@@ -9,7 +9,6 @@ Public Class Display
     End Sub
 
     Private Sub Display_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         FormBorderStyle = FormBorderStyle.None
         WindowState = FormWindowState.Maximized
     End Sub
@@ -89,7 +88,7 @@ Public Class Display
 
     Private Sub pid_TextChanged(sender As Object, e As EventArgs) Handles pid.TextChanged
         If Not Regex.Match(pid.Text, "^[0-9]$").Success Then
-            MessageBox.Show("Please enter your valid contact number.", "Participant's Contact Number")
+            MessageBox.Show("Please enter your valid Participant ID.", "Participant's ID")
             pid.Clear()
             pid.Focus()
         End If

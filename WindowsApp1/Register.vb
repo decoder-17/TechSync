@@ -93,12 +93,8 @@ Public Class Register
                 MessageBox.Show(ex.Message)
             Finally
                 connection.Close()
-
             End Try
         End If
-        colName = ""
-        colValue = ""
-        amt = 0
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -108,10 +104,11 @@ Public Class Register
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim connStr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TechSync;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         Dim connection As New SqlConnection(connStr)
+        amt = 0
         Try
             connection.Open()
-            If Not Regex.Match(TextBox3.Text, "^[a-z ][0-9]*$", RegexOptions.IgnoreCase).Success Then
-                Dim cmd As New SqlCommand("Insert into Payment([PID],[Amount],[TransactionID],[RegistrationStatus]) values (" + TextBox2.Text.Trim + "," + amt + "," + TextBox3.Text.Trim + "," + 1 + ")", connection)
+            If Not Regex.Match(tid.Text, "^[a-z][0-9]*$", RegexOptions.IgnoreCase).Success Then
+                Dim cmd As New SqlCommand("Insert into Payment([PID],[Amount],[TransactionID],[RegistrationStatus]) values ('" + TextBox2.Text.Trim + "','" + amt.ToString() + "','" + tid.Text.Trim + "','" + 1 + "')", connection)
                 Dim dr As SqlDataReader = cmd.ExecuteReader()
                 MessageBox.Show("Congratulations, you've successfully completed your registration process.", "Registration Status", MessageBoxButtons.OK)
             Else
@@ -123,7 +120,5 @@ Public Class Register
         Finally
             connection.Close()
         End Try
-
-
     End Sub
 End Class

@@ -41,7 +41,6 @@ Partial Class Display
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -63,9 +62,9 @@ Partial Class Display
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.pname)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Location = New System.Drawing.Point(707, 211)
+        Me.GroupBox1.Location = New System.Drawing.Point(707, 209)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(538, 629)
+        Me.GroupBox1.Size = New System.Drawing.Size(538, 575)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         '
@@ -73,7 +72,7 @@ Partial Class Display
         '
         Me.eventDisplay.Enabled = False
         Me.eventDisplay.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.eventDisplay.Location = New System.Drawing.Point(24, 476)
+        Me.eventDisplay.Location = New System.Drawing.Point(24, 429)
         Me.eventDisplay.Multiline = True
         Me.eventDisplay.Name = "eventDisplay"
         Me.eventDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
@@ -84,7 +83,7 @@ Partial Class Display
         '
         Me.dept.Enabled = False
         Me.dept.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dept.Location = New System.Drawing.Point(230, 334)
+        Me.dept.Location = New System.Drawing.Point(230, 287)
         Me.dept.Multiline = True
         Me.dept.Name = "dept"
         Me.dept.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
@@ -97,7 +96,7 @@ Partial Class Display
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label5.Location = New System.Drawing.Point(19, 336)
+        Me.Label5.Location = New System.Drawing.Point(19, 289)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(134, 29)
         Me.Label5.TabIndex = 16
@@ -110,7 +109,7 @@ Partial Class Display
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(185, 414)
+        Me.Button5.Location = New System.Drawing.Point(185, 367)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(196, 36)
         Me.Button5.TabIndex = 15
@@ -123,7 +122,7 @@ Partial Class Display
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label4.Location = New System.Drawing.Point(19, 80)
+        Me.Label4.Location = New System.Drawing.Point(19, 33)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(183, 29)
         Me.Label4.TabIndex = 13
@@ -132,7 +131,7 @@ Partial Class Display
         'pid
         '
         Me.pid.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pid.Location = New System.Drawing.Point(207, 78)
+        Me.pid.Location = New System.Drawing.Point(207, 31)
         Me.pid.Name = "pid"
         Me.pid.Size = New System.Drawing.Size(305, 35)
         Me.pid.TabIndex = 14
@@ -144,7 +143,7 @@ Partial Class Display
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(112, 147)
+        Me.Button3.Location = New System.Drawing.Point(112, 100)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(107, 36)
         Me.Button3.TabIndex = 12
@@ -158,7 +157,7 @@ Partial Class Display
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(325, 150)
+        Me.Button2.Location = New System.Drawing.Point(327, 100)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(107, 36)
         Me.Button2.TabIndex = 11
@@ -171,7 +170,7 @@ Partial Class Display
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label3.Location = New System.Drawing.Point(19, 220)
+        Me.Label3.Location = New System.Drawing.Point(19, 173)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(205, 29)
         Me.Label3.TabIndex = 1
@@ -181,7 +180,7 @@ Partial Class Display
         '
         Me.cno.Enabled = False
         Me.cno.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cno.Location = New System.Drawing.Point(230, 297)
+        Me.cno.Location = New System.Drawing.Point(230, 250)
         Me.cno.Multiline = True
         Me.cno.Name = "cno"
         Me.cno.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
@@ -194,7 +193,7 @@ Partial Class Display
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label8.Location = New System.Drawing.Point(19, 299)
+        Me.Label8.Location = New System.Drawing.Point(19, 252)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(123, 29)
         Me.Label8.TabIndex = 4
@@ -204,7 +203,7 @@ Partial Class Display
         '
         Me.cname.Enabled = False
         Me.cname.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cname.Location = New System.Drawing.Point(230, 257)
+        Me.cname.Location = New System.Drawing.Point(230, 210)
         Me.cname.Name = "cname"
         Me.cname.Size = New System.Drawing.Size(282, 35)
         Me.cname.TabIndex = 7
@@ -215,7 +214,7 @@ Partial Class Display
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label9.Location = New System.Drawing.Point(19, 259)
+        Me.Label9.Location = New System.Drawing.Point(19, 212)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(151, 29)
         Me.Label9.TabIndex = 5
@@ -225,7 +224,7 @@ Partial Class Display
         '
         Me.pname.Enabled = False
         Me.pname.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pname.Location = New System.Drawing.Point(230, 218)
+        Me.pname.Location = New System.Drawing.Point(230, 171)
         Me.pname.Name = "pname"
         Me.pname.Size = New System.Drawing.Size(282, 35)
         Me.pname.TabIndex = 6
@@ -286,18 +285,6 @@ Partial Class Display
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(853, 79)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(298, 53)
-        Me.Label2.TabIndex = 34
-        Me.Label2.Text = "PHOENIX 2.0"
-        '
         'Display
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -305,7 +292,6 @@ Partial Class Display
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Background_Selection_Page1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1823, 929)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.GroupBox1)
@@ -339,7 +325,6 @@ Partial Class Display
     Friend WithEvents Button6 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Label2 As Label
     Friend WithEvents dept As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents eventDisplay As TextBox
