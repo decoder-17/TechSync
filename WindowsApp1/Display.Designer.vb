@@ -23,7 +23,7 @@ Partial Class Display
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.events = New System.Windows.Forms.TextBox()
+        Me.eventDisplay = New System.Windows.Forms.TextBox()
         Me.dept = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -48,7 +48,7 @@ Partial Class Display
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox1.Controls.Add(Me.events)
+        Me.GroupBox1.Controls.Add(Me.eventDisplay)
         Me.GroupBox1.Controls.Add(Me.dept)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Button5)
@@ -69,16 +69,16 @@ Partial Class Display
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         '
-        'events
+        'eventDisplay
         '
-        Me.events.Enabled = False
-        Me.events.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.events.Location = New System.Drawing.Point(24, 476)
-        Me.events.Multiline = True
-        Me.events.Name = "events"
-        Me.events.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.events.Size = New System.Drawing.Size(488, 134)
-        Me.events.TabIndex = 18
+        Me.eventDisplay.Enabled = False
+        Me.eventDisplay.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.eventDisplay.Location = New System.Drawing.Point(24, 476)
+        Me.eventDisplay.Multiline = True
+        Me.eventDisplay.Name = "eventDisplay"
+        Me.eventDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.eventDisplay.Size = New System.Drawing.Size(488, 134)
+        Me.eventDisplay.TabIndex = 18
         '
         'dept
         '
@@ -342,5 +342,5 @@ Partial Class Display
     Friend WithEvents Label2 As Label
     Friend WithEvents dept As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents events As TextBox
+    Friend WithEvents eventDisplay As TextBox
 End Class

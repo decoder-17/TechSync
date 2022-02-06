@@ -25,7 +25,7 @@ Public Class Register_Details
         Dim connection As New SqlConnection(connStr)
         If String.IsNullOrWhiteSpace(TextBox2.Text) Or String.IsNullOrWhiteSpace(TextBox3.Text) Or String.IsNullOrWhiteSpace(TextBox4.Text) Or String.IsNullOrWhiteSpace(TextBox5.Text) Then
             MessageBox.Show("All the fields are mandatory. Please all the details.")
-        ElseIf TextBox3.TextLength < 10 Then
+        ElseIf TextBox5.TextLength < 10 Then
             MessageBox.Show("Please enter your valid contact number.", "Participant's Contact Number")
             TextBox5.Clear()
             TextBox5.Focus()
