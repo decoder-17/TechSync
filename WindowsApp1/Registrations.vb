@@ -25,14 +25,18 @@ Public Class Registrations
             connection.Open()
             Dim sda As New SqlDataAdapter(query, connection)
             sda.Fill(ds)
+            For i = 0 To ds.Tables(0).Columns.Count - 1
+                exWS.Cells(1, i) = ds.Tables(0).Columns(i).ColumnName
+            Next
             For i = 0 To ds.Tables(0).Rows.Count - 1
                 For j = 0 To ds.Tables(0).Columns.Count - 1
-                    exWS.Cells(i + 1, j + 1) = ds.Tables(0).Rows(i).Item(j)
+                    exWS.Cells(i + 2, j + 1) = ds.Tables(0).Rows(i).Item(j)
                 Next
             Next
             exWS.SaveAs("E:\Presidency College\Final Year Project\Resources\ExportData.xlsx")
             MessageBox.Show("Exported successfully.", "Export")
             path.Text = "The file has successfully been exported to E:\Presidency College\Final Year Project\Resources\ExportData.xlsx"
+            Me.Show()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
@@ -42,6 +46,7 @@ Public Class Registrations
             releaseObject(exWB)
             releaseObject(exWS)
             connection.Close()
+
         End Try
     End Sub
     Private Sub releaseObject(ByVal obj As Object)

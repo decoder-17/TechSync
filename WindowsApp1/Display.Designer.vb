@@ -62,7 +62,7 @@ Partial Class Display
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.pname)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Location = New System.Drawing.Point(707, 209)
+        Me.GroupBox1.Location = New System.Drawing.Point(733, 209)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(538, 575)
         Me.GroupBox1.TabIndex = 15
