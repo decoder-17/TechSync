@@ -104,11 +104,10 @@ Public Class Register
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim connStr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TechSync;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         Dim connection As New SqlConnection(connStr)
-        amt = 100
         Try
             connection.Open()
             If RadioButton1.Checked = True Then
-                Dim cmd As New SqlCommand("Insert into Payment([PID],[Amount],[RegistrationStatus]) values (" + TextBox2.Text.Trim + "," + CDbl(amt) + "," + 1 + ")", connection)
+                Dim cmd As New SqlCommand("Insert into Payment([PID],[Amount],[RegistrationStatus]) values (" + TextBox2.Text.Trim + "," + amt.ToString() + "," + "1" + ")", connection)
                 Dim dr As SqlDataReader = cmd.ExecuteReader()
                 MessageBox.Show("Congratulations, you've successfully completed your registration process.", "Registration Status", MessageBoxButtons.OK)
             Else

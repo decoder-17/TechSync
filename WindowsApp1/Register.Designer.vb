@@ -31,12 +31,12 @@ Partial Class Register
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -92,7 +92,7 @@ Partial Class Register
         Me.CheckedListBox1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckedListBox1.ForeColor = System.Drawing.Color.White
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Items.AddRange(New Object() {"1. GAME OF CODES", "2. GAME X", "3. WEB WEAVER", "4. TECHNOVA", "5. TECHKNACK", "6. SPARROW'S CHEST", "7. CAPTURING HUES"})
+        Me.CheckedListBox1.Items.AddRange(New Object() {"1. GAME OF CODES", "2. SPARROW'S CHEST", "3. CAPTURING HUES", "4. WEB WEAVER", "5. TECHKNACK", "6. TECHNOVA", "7. GAME X"})
         Me.CheckedListBox1.Location = New System.Drawing.Point(30, 53)
         Me.CheckedListBox1.Name = "CheckedListBox1"
         Me.CheckedListBox1.Size = New System.Drawing.Size(366, 203)
@@ -167,6 +167,28 @@ Partial Class Register
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PAYMENT WINDOW"
         '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(260, 137)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(149, 32)
+        Me.RadioButton2.TabIndex = 109
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "NOT PAID"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(260, 99)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(89, 32)
+        Me.RadioButton1.TabIndex = 108
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "PAID"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
@@ -180,6 +202,18 @@ Partial Class Register
         Me.Button3.TabIndex = 103
         Me.Button3.Text = "SUBMIT"
         Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Label3.Location = New System.Drawing.Point(6, 118)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(203, 24)
+        Me.Label3.TabIndex = 107
+        Me.Label3.Text = "PAYMENT STATUS"
         '
         'GroupBox3
         '
@@ -203,40 +237,6 @@ Partial Class Register
         Me.TextBox2.Size = New System.Drawing.Size(281, 31)
         Me.TextBox2.TabIndex = 7
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label3.Location = New System.Drawing.Point(6, 118)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(203, 24)
-        Me.Label3.TabIndex = 107
-        Me.Label3.Text = "PAYMENT STATUS"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(260, 99)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(89, 32)
-        Me.RadioButton1.TabIndex = 108
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "PAID"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(260, 137)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(149, 32)
-        Me.RadioButton2.TabIndex = 109
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "NOT PAID"
-        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'Register
         '

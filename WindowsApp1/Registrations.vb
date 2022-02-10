@@ -21,7 +21,7 @@ Public Class Registrations
         exWB = exAp.Workbooks.Add(misVal)
         exWS = exWB.Sheets("Sheet1")
         Try
-            Dim query As String = "Select Register.PID, Register.Pname, Register.ContactNo, Register.College, Register.Department, Events.GOC, Events.SC, Events.CH, Events.WW, Events.TK, Events.TN, Events.GX, RegistrationStatus.Payment FROM Register INNER JOIN Events ON Register.PID = Events.PID INNER JOIN Payment ON Register.PID = Payment.PID"
+            Dim query As String = "Select Register.PID as ParticipantID, Register.Pname as ParticipantName, Register.ContactNo, Register.College, Register.Department, Events.GOC as GameOfCode, Events.SC as SparrowsChest, Events.CH as CapturingHues, Events.WW as WebWeaver, Events.TK as Techknack, Events.TN as Technova, Events.GX as GameX FROM Register INNER JOIN Events ON Register.PID = Events.PID"
             connection.Open()
             Dim sda As New SqlDataAdapter(query, connection)
             sda.Fill(ds)
@@ -36,6 +36,7 @@ Public Class Registrations
             exWS.SaveAs("E:\Presidency College\Final Year Project\Resources\ExportData.xlsx")
             MessageBox.Show("Exported successfully.", "Export")
             path.Text = "The file has successfully been exported to E:\Presidency College\Final Year Project\Resources\ExportData.xlsx"
+            Button3.Show()
             Me.Show()
         Catch ex As Exception
             MessageBox.Show(ex.Message)

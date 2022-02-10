@@ -144,6 +144,7 @@ Partial Class Registrations
         Me.Button3.TabIndex = 19
         Me.Button3.Text = "OPEN"
         Me.Button3.UseVisualStyleBackColor = False
+        Me.Button3.Visible = False
         '
         'path
         '
