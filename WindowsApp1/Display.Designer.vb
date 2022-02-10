@@ -147,7 +147,7 @@ Partial Class Display
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(107, 36)
         Me.Button3.TabIndex = 12
-        Me.Button3.Text = "VIEW"
+        Me.Button3.Text = "SEARCH 🔍"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2

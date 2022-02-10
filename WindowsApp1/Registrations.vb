@@ -21,12 +21,12 @@ Public Class Registrations
         exWB = exAp.Workbooks.Add(misVal)
         exWS = exWB.Sheets("Sheet1")
         Try
-            Dim query As String = "Select * from Register"
+            Dim query As String = "Select Register.PID, Register.Pname, Register.ContactNo, Register.College, Register.Department, Events.GOC, Events.SC, Events.CH, Events.WW, Events.TK, Events.TN, Events.GX, RegistrationStatus.Payment FROM Register INNER JOIN Events ON Register.PID = Events.PID INNER JOIN Payment ON Register.PID = Payment.PID"
             connection.Open()
             Dim sda As New SqlDataAdapter(query, connection)
             sda.Fill(ds)
             For i = 0 To ds.Tables(0).Columns.Count - 1
-                exWS.Cells(1, i) = ds.Tables(0).Columns(i).ColumnName
+                exWS.Cells(1, i + 1) = ds.Tables(0).Columns(i).ColumnName
             Next
             For i = 0 To ds.Tables(0).Rows.Count - 1
                 For j = 0 To ds.Tables(0).Columns.Count - 1

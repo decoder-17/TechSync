@@ -29,13 +29,14 @@ Partial Class Register
         Me.Button1 = New System.Windows.Forms.Button()
         Me.fees = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.tid = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -134,18 +135,6 @@ Partial Class Register
         Me.Label2.TabIndex = 104
         Me.Label2.Text = "REGISTRATION FEES"
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label3.Location = New System.Drawing.Point(6, 118)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(195, 24)
-        Me.Label3.TabIndex = 107
-        Me.Label3.Text = "TRANSACTION ID"
-        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -163,7 +152,8 @@ Partial Class Register
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Controls.Add(Me.tid)
+        Me.GroupBox2.Controls.Add(Me.RadioButton2)
+        Me.GroupBox2.Controls.Add(Me.RadioButton1)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
@@ -176,16 +166,6 @@ Partial Class Register
         Me.GroupBox2.TabIndex = 110
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PAYMENT WINDOW"
-        '
-        'tid
-        '
-        Me.tid.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.tid.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tid.ForeColor = System.Drawing.Color.Black
-        Me.tid.Location = New System.Drawing.Point(222, 108)
-        Me.tid.Name = "tid"
-        Me.tid.Size = New System.Drawing.Size(180, 38)
-        Me.tid.TabIndex = 108
         '
         'Button3
         '
@@ -224,6 +204,40 @@ Partial Class Register
         Me.TextBox2.TabIndex = 7
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Label3.Location = New System.Drawing.Point(6, 118)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(203, 24)
+        Me.Label3.TabIndex = 107
+        Me.Label3.Text = "PAYMENT STATUS"
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(260, 99)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(89, 32)
+        Me.RadioButton1.TabIndex = 108
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "PAID"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(260, 137)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(149, 32)
+        Me.RadioButton2.TabIndex = 109
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "NOT PAID"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -257,11 +271,12 @@ Partial Class Register
     Friend WithEvents Button1 As Button
     Friend WithEvents fees As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Button3 As Button
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents tid As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
 End Class
