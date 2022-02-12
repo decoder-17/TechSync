@@ -36,7 +36,7 @@ Public Class Register
         If (CheckedListBox1.GetItemChecked(0)) Then
             colName = "[GOC],"
             colValue = "1,"
-            amt = 200
+            amt += 200
         End If
         If (CheckedListBox1.GetItemChecked(1)) Then
             colName &= "[SC],"
@@ -44,29 +44,24 @@ Public Class Register
             amt += 500
         End If
         If (CheckedListBox1.GetItemChecked(2)) Then
-            colName &= "[CH],"
+            colName &= "[ww],"
             colValue &= "1,"
             amt += 200
         End If
         If (CheckedListBox1.GetItemChecked(3)) Then
-            colName &= "[WW],"
-            colValue &= "1,"
-            amt += 200
-        End If
-        If (CheckedListBox1.GetItemChecked(4)) Then
             colName &= "[TK],"
             colValue &= "1,"
             amt += 200
         End If
-        If (CheckedListBox1.GetItemChecked(5)) Then
+        If (CheckedListBox1.GetItemChecked(4)) Then
             colName &= "[TN],"
             colValue &= "1,"
-            amt += 500
+            amt += 200
         End If
-        If (CheckedListBox1.GetItemChecked(6)) Then
+        If (CheckedListBox1.GetItemChecked(5)) Then
             colName &= "[GX],"
             colValue &= "1,"
-            amt += 200
+            amt += 500
         End If
         c = 0
         For i = 0 To (CheckedListBox1.Items.Count - 1)
@@ -110,6 +105,8 @@ Public Class Register
                 Dim cmd As New SqlCommand("Insert into Payment([PID],[Amount],[RegistrationStatus]) values (" + TextBox2.Text.Trim + "," + amt.ToString() + "," + "1" + ")", connection)
                 Dim dr As SqlDataReader = cmd.ExecuteReader()
                 MessageBox.Show("Congratulations, you've successfully completed your registration process.", "Registration Status", MessageBoxButtons.OK)
+                Me.Close()
+                Selection.Show()
             Else
                 MessageBox.Show("Payment is pending, please complete your payment to be participate against the elites.", "Registration Status", MessageBoxButtons.OK)
             End If

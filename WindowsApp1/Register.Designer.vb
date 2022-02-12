@@ -92,7 +92,7 @@ Partial Class Register
         Me.CheckedListBox1.Font = New System.Drawing.Font("Bookman Old Style", 17.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckedListBox1.ForeColor = System.Drawing.Color.White
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Items.AddRange(New Object() {"1. GAME OF CODES", "2. SPARROW'S CHEST", "3. CAPTURING HUES", "4. WEB WEAVER", "5. TECHKNACK", "6. TECHNOVA", "7. GAME X"})
+        Me.CheckedListBox1.Items.AddRange(New Object() {"1. GAME OF CODES", "2. SPARROW'S CHEST", "3. WEB WEAVER", "4. TECHKNACK", "5. TECHNOVA", "6. GAME X"})
         Me.CheckedListBox1.Location = New System.Drawing.Point(30, 53)
         Me.CheckedListBox1.Name = "CheckedListBox1"
         Me.CheckedListBox1.Size = New System.Drawing.Size(366, 203)

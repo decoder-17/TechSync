@@ -21,7 +21,7 @@ Public Class Registrations
         exWB = exAp.Workbooks.Add(misVal)
         exWS = exWB.Sheets("Sheet1")
         Try
-            Dim query As String = "Select Register.PID as ParticipantID, Register.Pname as ParticipantName, Register.ContactNo, Register.College, Register.Department, Events.GOC as GameOfCode, Events.SC as SparrowsChest, Events.CH as CapturingHues, Events.WW as WebWeaver, Events.TK as Techknack, Events.TN as Technova, Events.GX as GameX FROM Register INNER JOIN Events ON Register.PID = Events.PID"
+            Dim query As String = "Select Register.PID as ParticipantID, Register.Pname as ParticipantName, Register.ContactNo, Register.College, Register.Department, Events.GOC as GameOfCode, Events.SC as SparrowsChest, Events.WW as WebWeaver, Events.TK as Techknack, Events.TN as Technova, Events.GX as GameX FROM Register INNER JOIN Events ON Register.PID = Events.PID"
             connection.Open()
             Dim sda As New SqlDataAdapter(query, connection)
             sda.Fill(ds)
