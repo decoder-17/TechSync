@@ -93,7 +93,20 @@ Public Class Register
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        End
+        Dim i, c As Integer
+        c = 0
+        For i = 0 To (CheckedListBox1.Items.Count - 1)
+            If CheckedListBox1.GetItemChecked(i) = True Then
+                c += 1
+            End If
+        Next
+        If RadioButton1.Checked Or RadioButton2.Checked Then
+            MessageBox.Show("Please submit before exiting the window", "Payment Window")
+        ElseIf c = 0 Then
+            MessageBox.Show("Please choose event and complete the registration process", "Registration")
+        Else
+            End
+        End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

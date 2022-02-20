@@ -10,10 +10,14 @@ Public Class username
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'The connection string pinpoints the location of the database being used to. for connecting to it.
         Dim connStr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TechSync;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         Dim connection As New SqlConnection(connStr)
+        'The query which takes input from the textboxes and then checks the same with the data stored in the database.
         Dim cmd As New SqlCommand("select *from Login where username='" + User.Text.Trim + "' and password='" + password.Text.Trim + "'", connection)
+        'Try, catch, and finally to resolve any error it encounters.
         Try
+            'The connection opens, and the query is executed.
             connection.Open()
             Dim dr As SqlDataReader = cmd.ExecuteReader()
             If (dr.Read = True) Then
