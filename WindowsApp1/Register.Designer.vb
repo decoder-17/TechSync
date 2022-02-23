@@ -31,7 +31,6 @@ Partial Class Register
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -152,7 +151,6 @@ Partial Class Register
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Controls.Add(Me.RadioButton2)
         Me.GroupBox2.Controls.Add(Me.RadioButton1)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Label3)
@@ -167,21 +165,10 @@ Partial Class Register
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PAYMENT WINDOW"
         '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(260, 137)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(149, 32)
-        Me.RadioButton2.TabIndex = 109
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "NOT PAID"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(260, 99)
+        Me.RadioButton1.Location = New System.Drawing.Point(260, 113)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(89, 32)
         Me.RadioButton1.TabIndex = 108
@@ -277,6 +264,5 @@ Partial Class Register
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
 End Class

@@ -100,7 +100,7 @@ Public Class Register
                 c += 1
             End If
         Next
-        If RadioButton1.Checked Or RadioButton2.Checked Then
+        If RadioButton1.Checked Then
             MessageBox.Show("Please submit before exiting the window", "Payment Window")
         ElseIf c = 0 Then
             MessageBox.Show("Please choose event and complete the registration process", "Registration")

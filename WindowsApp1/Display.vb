@@ -56,7 +56,7 @@ Public Class Display
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim connStr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TechSync;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
         Dim connection As New SqlConnection(connStr)
-        Dim eventList() As String = {"Game of Code", "Sparrow's Chest", "Capturing Hues", "Web Weaver", "Techknack", "Technova", "Game X"}
+        Dim eventList() As String = {"Game of Code", "Sparrow's Chest", "Web Weaver", "Techknack", "Technova", "Game X"}
         Dim eventSelected As String = ""
         Dim pos, len As Integer
         Try
