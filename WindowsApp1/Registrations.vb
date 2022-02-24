@@ -36,8 +36,8 @@ Public Class Registrations
             exWS.SaveAs("E:\Presidency College\Final Year Project\Resources\ExportData.xlsx")
             MessageBox.Show("Exported successfully.", "Export")
             path.Text = "The file has successfully been exported to E:\Presidency College\Final Year Project\Resources\ExportData.xlsx"
-            Button3.Show()
-            Me.Show()
+            Dim filename As String = "E:\Presidency College\Final Year Project\Resources\ExportData.xlsx"
+            Process.Start(filename)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
@@ -47,7 +47,6 @@ Public Class Registrations
             releaseObject(exWB)
             releaseObject(exWS)
             connection.Close()
-
         End Try
     End Sub
     Private Sub releaseObject(ByVal obj As Object)
@@ -74,15 +73,5 @@ Public Class Registrations
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
         Selection.Show()
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim filename As String = "E:\Presidency College\Final Year Project\Resources\ExportData.xlsx"
-
-        If System.IO.File.Exists(filename) = True Then
-            Process.Start(filename)
-        Else
-            MessageBox.Show("The file doesn't exist.")
-        End If
     End Sub
 End Class
